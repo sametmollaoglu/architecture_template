@@ -1,4 +1,5 @@
 import 'package:architecture_template/feature/home/view/mixin/home_view_mixin.dart';
+import 'package:architecture_template/product/init/config/app_environment.dart';
 import 'package:architecture_template/product/init/language/locale_keys.g.dart';
 import 'package:architecture_template/product/init/product_localization.dart';
 import 'package:architecture_template/product/utility/constants/enums/locales.dart';
@@ -22,6 +23,7 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          ElevatedButton(onPressed: () {}, child: Text(AppEnvironment.baseUrl)),
           const Text('Change Language'),
           ElevatedButton(
             onPressed: () {
